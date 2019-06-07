@@ -1,0 +1,70 @@
+<measure>
+  <schema_version>3.0</schema_version>
+  <name>set_chiller_cop</name>
+  <uid>6b87fc76-a663-4611-bf1f-3ff416727267</uid>
+  <version_id>f3a2fc6b-8a72-4733-8552-c111357f087e</version_id>
+  <version_modified>20171129T031200Z</version_modified>
+  <xml_checksum>9E2537CD</xml_checksum>
+  <class_name>SetChillerCOP</class_name>
+  <display_name>Set Chiller COP</display_name>
+  <description>This measure aims to change chiller COP.</description>
+  <modeler_description>Change chiller COP.</modeler_description>
+  <arguments>
+    <argument>
+      <name>chiller_thermal_efficiency</name>
+      <display_name>Chiller rated COP (more than 0)</display_name>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>3</default_value>
+    </argument>
+  </arguments>
+  <outputs/>
+  <provenances/>
+  <tags>
+    <tag>HVAC.Cooling</tag>
+  </tags>
+  <attributes>
+    <attribute>
+      <name>Measure Type</name>
+      <value>ModelMeasure</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Uses SketchUp API</name>
+      <value>false</value>
+      <datatype>boolean</datatype>
+    </attribute>
+  </attributes>
+  <files>
+    <file>
+      <filename>example_model.osm</filename>
+      <filetype>osm</filetype>
+      <usage_type>test</usage_type>
+      <checksum>C4F35230</checksum>
+    </file>
+    <file>
+      <filename>set_chiller_cop_test.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>test</usage_type>
+      <checksum>A78DD0BE</checksum>
+    </file>
+    <file>
+      <version>
+        <software_program>OpenStudio</software_program>
+        <identifier>1.2.0</identifier>
+        <min_compatible>1.2.0</min_compatible>
+      </version>
+      <filename>measure.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>script</usage_type>
+      <checksum>1416CFA1</checksum>
+    </file>
+    <file>
+      <filename>desktop.ini</filename>
+      <filetype>ini</filetype>
+      <usage_type>test</usage_type>
+      <checksum>1F1C47A7</checksum>
+    </file>
+  </files>
+</measure>
